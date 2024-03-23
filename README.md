@@ -2,7 +2,7 @@
 
 ## Integrantes do grupo
 
-- Lucas Moreira (Líder)
-- Kessyla Borges
-- Davi Barros
-- Gabriel Martins
+- Lucas Moreira (Requisitos e Arquitetura)
+- Kessyla Borges (Prototipação)
+- Davi Barros (Desenvolvimento)
+- Gabriel Martins (Relacionamento e Documentação)
