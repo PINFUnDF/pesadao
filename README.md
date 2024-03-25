@@ -9,6 +9,8 @@
 
 ## Requisitos
 
+> O site utilizado como referência foi o [Netshoes](https://www.netshoes.com.br/).
+
 1. O sistema deve permitir o usuário se cadastrar.
 2. O sistema deve permitir que o usuário faça login usando nome de usuário e senha.
 3. O sistema deve apresentar os produtos em forma de lista.
