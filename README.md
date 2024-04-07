@@ -22,6 +22,6 @@
 9. O sistema deve permitir que o usuário remova um item do seu carrinho de compras.
 10. O sistema deve fornecer um botão de finalizar compra quando o usuário estiver na tela de carrinho de compras.
 
-## Prototivação
+## Prototipação
 
 -Foi iniciado dia 01/04/2024.
