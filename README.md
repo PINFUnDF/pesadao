@@ -9,20 +9,20 @@
 
 ## Etapas do projeto
 
--Requisitos e Arquitetura: momento em que se define quais funcionalidades, estrutura e design o site deve ter. Teve duração de duas semanas, sendo iniciado dia 18/03/2024 e finalizado dia 01/04/2024;
+- Requisitos e Arquitetura: momento em que se define quais funcionalidades, estrutura e design o site deve ter. Teve duração de duas semanas, sendo iniciado dia 18/03/2024 e finalizado dia 01/04/2024;
 
--Prototipação: é o processo de criação de um protótipo, ou seja, um modelo intermediário de um produto ou sistema que será submetido a testes. Tem o intuito de se verificar aspectos que precisam ser refinados para se chegar ao produto final, antecipando problemas e prevenindo gastos desnecessários. A tecnologia utilizada nessa etapa foi o "figma". Foi iniciado dia 01/04/2024;
+- Prototipação: é o processo de criação de um protótipo, ou seja, um modelo intermediário de um produto ou sistema que será submetido a testes. Tem o intuito de se verificar aspectos que precisam ser refinados para se chegar ao produto final, antecipando problemas e prevenindo gastos desnecessários. A tecnologia utilizada nessa etapa foi o "figma". Foi iniciado dia 01/04/2024;
 
--Desenvolvimento: fase em que as ideias e conceitos definidos nos passos anteriores são colocados em prática e se tornam funcionais. A tecnologia utilizada para a realização dessa etapa foi o "react". Foi iniciado dia 20/03/2024;
+- Desenvolvimento: fase em que as ideias e conceitos definidos nos passos anteriores são colocados em prática e se tornam funcionais. A tecnologia utilizada para a realização dessa etapa foi o "react". Foi iniciado dia 20/03/2024;
 
--Relacionamento e Documentação: etapa responsável por se comunicar com o cliente, alinhando o projeto às suas expectativas, e por registrar as etapas do projeto.
+- Relacionamento e Documentação: etapa responsável por se comunicar com o cliente, alinhando o projeto às suas expectativas, e por registrar as etapas do projeto.
 
 
 ## Tecnologias utilizadas
 
--Figma: é uma ferramenta de design de interfaces e protótipos que une as funcionalidades de um aplicativo com uma acessibilidade facilitada, já que é disponibilizado via web. Link: https://www.figma.com/file/bPkcZTFBBGYEIfCix3zbGO/Untitled?type=design&node-id=9-215&mode=design&t=Zi3j0jUHqZj2Qz4Y-0
+- Figma: é uma ferramenta de design de interfaces e protótipos que une as funcionalidades de um aplicativo com uma acessibilidade facilitada, já que é disponibilizado via web. Link: https://www.figma.com/file/bPkcZTFBBGYEIfCix3zbGO/Untitled?type=design&node-id=9-215&mode=design&t=Zi3j0jUHqZj2Qz4Y-0
 
--React: é uma biblioteca em código aberto para interfaces gráficas por meio de javascript. Sua principal função é melhorar experiência da interface gráfica com o usuário. Link: https://react.dev/
+- React: é uma biblioteca em código aberto para interfaces gráficas por meio de javascript. Sua principal função é melhorar experiência da interface gráfica com o usuário. Link: https://react.dev/
 
 
 ## Requisitos
