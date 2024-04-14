@@ -7,7 +7,7 @@
 - Davi Barros (Desenvolvimento)
 - Gabriel Martins (Relacionamento e Documentação)
 
-##Etapas do projeto
+## Etapas do projeto
 
 -Requisitos e Arquitetura: momento em que se define quais funcionalidades, estrutura e design o site deve ter. Teve duração de duas semanas, sendo iniciado dia 18/03/2024 e finalizado dia 01/04/2024;
 
@@ -18,7 +18,7 @@
 -Relacionamento e Documentação: etapa responsável por se comunicar com o cliente, alinhando o projeto às suas expectativas, e por registrar as etapas do projeto.
 
 
-##Tecnologias utilizadas
+## Tecnologias utilizadas
 
 -Figma: é uma ferramenta de design de interfaces e protótipos que une as funcionalidades de um aplicativo com uma acessibilidade facilitada, já que é disponibilizado via web. Link: https://www.figma.com/file/bPkcZTFBBGYEIfCix3zbGO/Untitled?type=design&node-id=9-215&mode=design&t=Zi3j0jUHqZj2Qz4Y-0
 
