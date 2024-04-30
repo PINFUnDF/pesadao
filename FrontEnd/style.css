@@ -1,0 +1,119 @@
+.container-fluid{
+    background-color: #E9ECEF;
+}
+.inicial{
+    margin-top: 110px;
+    position: relative;
+}
+header{
+    background-color: #D9D9D9;
+}
+h1{
+    font-family: "Kaushan Script", cursive;
+}
+a{
+    font-family: "Actor", sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+#search{
+    width:300px;
+    height: 40px;
+    border: none;
+    position: relative;
+    left: 40px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position:relative;
+    cursor: pointer;
+}
+.icon-2{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    position:relative;
+    cursor: pointer;
+    margin-left: 5px; 
+}
+#img-main{
+    width: 120%;
+    height: 100%;
+}
+#content-main img{
+    justify-content: center;
+}
+.tit-oferta{
+    font-family: "Allura", cursive;
+    font-size: 40px;
+}
+.oferta-1, .oferta-2{
+    background-color: #D9D9D9;
+    border-radius: 20px 20px;
+    width: 70%;
+    height: 20%;
+}
+.oferta-1{
+    position: relative;
+    top: 20%;
+    left: 200px;
+    text-align: center;
+}
+.oferta-2{
+    position:relative;
+    top: 60%;
+    font-family: "Caladea", serif;
+    font-size: 20px;
+    text-indent: 20px;
+}
+.oferta-2 p{
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+.espaco{
+    margin-top: 0;
+    margin-left: 60px;
+}
+.espaco-2{
+    margin-left: 90px;
+    font-style: italic;
+}
+.comprar{
+    border: none;
+    background-color: #FFFF;
+}
+.comprar:hover{
+    border:solid #ffff;
+    background-color: #d9d9d9;
+}
+.menu-sanfona{
+    list-style: none;
+}
+.menu-sanfona li ul{
+    display:none;
+    list-style: none;
+}
+.menu-sanfona li:focus ul{
+    display:block;
+}
+#select{
+    width: 20px;
+    height: 20px;
+}
+.titulo{
+    text-align: center;
+    font-family: "Caladea", serif;
+    margin-top: 30px;
+}
+.barra-fixa{
+    position: fixed;
+    top: 0; /* Define a posição do menu no topo da janela */
+    left: 0; /* Define a posição do menu no lado esquerdo da janela */
+    width: 100%;
+    z-index: 1000;
+}
+.cards{
+    width: 500px;
+    height: 800px;
+}
