@@ -1,26 +1,37 @@
-.container-fluid{
+body{
     background-color: #E9ECEF;
 }
 .inicial{
     margin-top: 110px;
     position: relative;
 }
-header{
+.primeira-navbar{
     background-color: #D9D9D9;
 }
 h1{
+    text-align: center;
     font-family: "Kaushan Script", cursive;
 }
 a{
     font-family: "Actor", sans-serif;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 #search{
-    width:300px;
+    min-width: 280px;
     height: 40px;
     border: none;
     position: relative;
     left: 40px;
+    border-radius: 0;
+}
+#search-btn{
+    background-color: white;
+    position: relative;
+    border: none;
+    margin-right: 1px;
+}
+#search-btn button{
+    display: none;
+    border: none;
 }
 .icon{
     display: flex;
@@ -46,9 +57,13 @@ a{
 }
 .tit-oferta{
     font-family: "Allura", cursive;
-    font-size: 40px;
+    font-size: 30px;
 }
 .oferta-1, .oferta-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #D9D9D9;
     border-radius: 20px 20px;
     width: 70%;
@@ -67,35 +82,23 @@ a{
     font-size: 20px;
     text-indent: 20px;
 }
-.oferta-2 p{
-    margin-top: 5px;
-    margin-bottom: 2px;
+.conteudo-oferta{
+    display: flex;
+    flex-direction: column;
 }
 .espaco{
-    margin-top: 0;
-    margin-left: 60px;
-}
-.espaco-2{
-    margin-left: 90px;
     font-style: italic;
 }
 .comprar{
+    margin-bottom: 8px;
+    width: 50%;
+    height: 30px;
     border: none;
     background-color: #FFFF;
 }
 .comprar:hover{
     border:solid #ffff;
     background-color: #d9d9d9;
-}
-.menu-sanfona{
-    list-style: none;
-}
-.menu-sanfona li ul{
-    display:none;
-    list-style: none;
-}
-.menu-sanfona li:focus ul{
-    display:block;
 }
 #select{
     width: 20px;
@@ -113,7 +116,54 @@ a{
     width: 100%;
     z-index: 1000;
 }
-.cards{
-    width: 500px;
-    height: 800px;
+
+/* Esconder elementos quando a tela é minimizada */
+@media only screen and (max-width: 994px) {
+    .oferta-1,
+    .oferta-2,
+    #content-main,
+    .lobinho {
+        display: none;
+    }
+    .primeira-navbar, .segunda-navbar{
+        min-width: 570px;
+    }
+}
+.segunda-navbar{
+    display: block;
+}
+.container-menu{
+    display:flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    top:0;
+    
+}
+.pai-roupas{
+    display: flex;
+    
+}
+.card-body-site{
+    height: 120px;
+    background-color: none;
+    margin-left: 15px;
+}
+.card-desc{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    max-width: 18rem;
+    margin-bottom: 15px;  
+}
+.conteudo-oferta{
+    text-align: center;
+}
+#menu li{
+    color:black;
+}
+#menu ul li:hover{
+    color: #b11616;
 }
