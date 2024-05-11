@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Micro+5+Charted&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid">
@@ -47,7 +48,7 @@
                             <path d="M9.57531 10.3119C9.9821 10.3119 10.3119 9.9821 10.3119 9.57531C10.3119 9.16852 9.9821 8.83875 9.57531 8.83875C9.16852 8.83875 8.83875 9.16852 8.83875 9.57531C8.83875 9.9821 9.16852 10.3119 9.57531 10.3119Z" stroke="black" stroke-width="0.89875" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>    
                         <form class="d-flex" role="search">
-                            <input id = "search"class="form-control me-2" type="search" placeholder="Buscar Produto" aria-label="Search">
+                            <input id = "search"class="form-control me-2" type="search" placeholder="Buscar Produtos" aria-label="Search">
                             <button type="submit" id="search-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -99,9 +100,9 @@
             <div class="col-lg-4">
                 <div class="oferta-2">
                     <div class="conteudo-oferta">
-                        <p>Camisas Femininas</p>
-                        <p>e Masculinas</p>
-                        <p class = "espaco">A partir de R$: 24,99</p>
+                        <p class = "p1">Camisas Femininas</p>
+                        <p class = "p2">e Masculinas</p>
+                        <p class = "p3">A partir de R$: 24,99</p>
                     </div>
                 </div>
             </div>
@@ -126,7 +127,7 @@
             <h2><a name= "feminino">Feminino</a></h2>
         </div>
         <!--Inicio do Carousel-->
-        <div class="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active cards">
                     <div class="row d-flex pai-roupas">
@@ -142,10 +143,10 @@
                         </div>
                         <div class="col-lg-4 cards">
                             <div class="card card-desc"  style="width: 18rem;">
-                                <img src="Feminino/blusa-f-2.jpg" alt="" class="card-img top">
+                                <img src="Feminino/blusa-f-2.jpg" alt="" class="card-img-top">
                             </div> 
                             <div class="card-body-site">
-                                <h6>Camisa Feminina </h6>
+                                <h6>Camisa Feminina - Vermelha </h6>
                                 <h6>TAM P ao GG</h6>
                                 <h6>R$: 24,99</h6>
                             </div> 
@@ -162,9 +163,51 @@
                         </div>
                     </div>
                 </div>
+                <!--Segunda Parte do Carousel-->
+                <div class="carousel-item cards">
+                    <div class="row d-flex pai-roupas">
+                        <div class="col-lg-4 cards">
+                            <div class="card card-desc"  style="width: 18rem;">
+                                <img src="Feminino/casaco-f.jpg" alt="" class="card-img-top img-2">
+                            </div>
+                            <div class="card-body-site"> 
+                                <h6>Casaco Feminino - Preto</h6>
+                                <h6>TAM P ao GG</h6>
+                                <h6>R$: 84,99</h6>
+                            </div> 
+                        </div>
+                        <div class="col-lg-4 cards">
+                            <div class="card card-desc"  style="width: 18rem;">
+                                <img src="Feminino/casaco-f-2.jpg" alt="" class="card-img-top img-2">
+                            </div> 
+                            <div class="card-body-site">
+                                <h6>Casaco Feminino - Roxo Escuro </h6>
+                                <h6>TAM P ao GG</h6>
+                                <h6>R$: 99,90</h6>
+                            </div> 
+                        </div>     
+                        <div class="col-lg-4 cards">
+                            <div class="card card-desc">
+                                <img src="Feminino/sobretudo-f.jpg" alt="" class="card-img-top img-2">
+                            </div>
+                            <div class="card-body-site">
+                                <h6>Sobretudo Feminino - Azul</h6>
+                                <h6>TAM P ao GG</h6>
+                                <h6>R$: 134,99</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
-
     </div>
  
 
@@ -172,7 +215,137 @@
 
 
     <!--Sessão Masculina-->
-    <!--Por existirem apenas 3 produtos, será aplicado apenas 3 cards.-->
+    <div class="container-md">
+        <div class="titulo">
+            <h2><a name= "masculino">Masculino</a></h2>
+        </div>
+        <div class="row d-flex pai-roupas">
+            <div class="col-lg-4 cards">
+                <div class="card card-desc"  style="width: 18rem;">
+                    <img src="Masculino/blusa masculina.jpg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body-site"> 
+                    <h6>Camisa Masculina - DUO</h6>
+                    <h6>TAM P ao GG</h6>
+                    <h6>R$: 24,99</h6>
+                </div> 
+            </div>
+            <div class="col-lg-4 cards">
+                <div class="card card-desc"  style="width: 18rem;">
+                    <img src="Masculino/blusa masculina 2.jpg" alt="" class="card-img top">
+                </div> 
+                <div class="card-body-site">
+                    <h6>Manga Longa - Indigo </h6>
+                    <h6>TAM P ao GG</h6>
+                    <h6>R$: 34,99</h6>
+                </div> 
+            </div>     
+            <div class="col-lg-4 cards">
+                <div class="card card-desc">
+                    <img src="Masculino/sobretudo masculino.jpg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body-site">
+                    <h6>Jaqueta Masculina</h6>
+                    <h6>TAM P ao GG</h6>
+                    <h6>R$: 74,99</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Sessão Jaquetas-->
+    <div class="container-md">
+        <!--Carousel da Sessão Femininas-->
+        <div class="titulo">
+            <h2><a name= "jaquetas">Jaquetas</a></h2>
+        </div>
+        <!--Inicio do Carousel-->
+        <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active cards">
+                    <div class="row d-flex pai-roupas">
+                        <div class="col-lg-4 cards">
+                            <div class="card card-desc"  style="width: 18rem;">
+                                <img src="Feminino/casaco-f.jpg" alt="" class="card-img-top img-2">
+                            </div>
+                            <div class="card-body-site"> 
+                                <h6>Casaco Feminino - Preto</h6>
+                                <h6>TAM P ao GG</h6>
+                                <h6>R$: 84,99</h6>
+                            </div> 
+                        </div>
+                        <div class="col-lg-4 cards">
+                            <div class="card card-desc"  style="width: 18rem;">
+                                <img src="Feminino/casaco-f-2.jpg" alt="" class="card-img-top img-2">
+                            </div> 
+                            <div class="card-body-site">
+                                <h6>Casaco Feminino - Roxo Escuro </h6>
+                                <h6>TAM P ao GG</h6>
+                                <h6>R$: 99,90</h6>
+                            </div> 
+                        </div>     
+                        <div class="col-lg-4 cards">
+                            <div class="card card-desc">
+                                <img src="Feminino/sobretudo-f.jpg" alt="" class="card-img-top img-2">
+                            </div>
+                            <div class="card-body-site">
+                                <h6>Sobretudo Feminino - Azul</h6>
+                                <h6>TAM P ao GG</h6>
+                                <h6>R$: 134,99</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Segunda Parte do Carousel-->
+                <div class="carousel-item cards">
+                    <div class="row d-flex pai-roupas">
+                        <div class="col-lg-4 cards">
+                            <div class="card card-desc"  style="width: 18rem;">
+                                <img src="Masculino/sobretudo masculino.jpg" alt="" class="card-img-top">
+                            </div>
+                            <div class="card-body-site"> 
+                                <h6>Jaqueta Masculina</h6>
+                                <h6>TAM P ao GG</h6>
+                                <h6>R$: 74,99</h6>
+                            </div> 
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+
+    <!--Sessão Mochilas-->
+    <div class="container-md">
+        <div class="row">
+            <div class="titulo">
+                <h2><a name= "mochilas">Mochilas</a></h2>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <div class="cards">
+                    <div class="card card-desc">
+                        <img src="Aleatorios/mochila.jpg" alt="" class="card-img-top">
+                    </div>
+                    <div class="card-body-site">
+                        <h6>Mochila Blue Valentine</h6>
+                        <h6>40 Litros</h6>
+                        <h6>R$: 74,99</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
 
 
     </div>
