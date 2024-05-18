@@ -22,7 +22,7 @@
 
 - Figma: é uma ferramenta de design de interfaces e protótipos que une as funcionalidades de um aplicativo com uma acessibilidade facilitada, já que é disponibilizado via web. Link: https://www.figma.com/file/bPkcZTFBBGYEIfCix3zbGO/Untitled?type=design&node-id=9-215&mode=design&t=Zi3j0jUHqZj2Qz4Y-0
 
-- HTML, CSS e Javascript: são ferramentas utilizadas em conjunto no desenvolvimento de sites web. O HTML é uma linguagem de marcação que serve para contruir a estrutura básica da página web, o CSS é usado para estilizar o que foi criado com o HTML E, por fim, o Javascript faz com que o conteúdo web seja interativo e dinâmico.
+- HTML, CSS e Javascript: são ferramentas utilizadas em conjunto no desenvolvimento de sites web. O HTML é uma linguagem de marcação que serve para contruir a estrutura básica da página web, o CSS é usado para estilizar o que foi criado com o HTML e, por fim, o Javascript faz com que o conteúdo web seja interativo e dinâmico.
 
 
 ## Requisitos
