@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home - Pesadao</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Actor&family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -35,7 +36,7 @@
                         <h1>Pesadão</h1>
                     </div>
                     <div class="col-md-4 d-flex align-items-center">
-                        <a href="/login">
+                        <a href="/login" id = "iconLogin">
                             <svg width="50" height="30" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0H10V10H0V0Z" fill="white" fill-opacity="0.01"/>
                                 <path d="M5.00001 4.16667C5.80542 4.16667 6.45834 3.51375 6.45834 2.70833C6.45834 1.90292 5.80542 1.25 5.00001 1.25C4.19459 1.25 3.54167 1.90292 3.54167 2.70833C3.54167 3.51375 4.19459 4.16667 5.00001 4.16667Z" fill="white" stroke="black" stroke-width="0.65875" stroke-linecap="round" stroke-linejoin="round"/>
@@ -86,83 +87,39 @@
                 </div>
             </div> 
         </div>
-        <!--Fim do Menu-->
-        <div class="container-cadastro">
-            <div class="row">
-                <h3>Cadastrar-se</h3>
-            </div>
-            <div class="container-md box-cadastro">
-                <form action="/cadastrar" method="POST">
-                    <input type="text" name="nome" id="nameUser" placeholder="  Nome Completo">
-                    <input type="datetime" name="data" id="dateUser" placeholder="  Data de Nascimento">
-                    <input type="email" name="email" id="emailUser" placeholder="  E-mail">
-                    <input type="number" name="phone" id="phoneUser" placeholder="  Número de Telefone">
-                    <input type="password" name="password" id="senhaUser" placeholder="  Crie uma senha de 8 dígitos">
-                    <input type="password" name="confirmPassword" id="senhaUser" placeholder="  Confirme a senha">
-                    <input type="submit" value="CONTINUAR" id="cadastrobtn">
-                </form>
-                <div class="detalhes">
-                    <div class="linha-1"></div>
-                    <div class="p">ou</div>
-                    <div class="linha-2"></div>
-                </div>
-                <div class="detalhes">
-                    <button class="google">
-                        <a href="">
-                            <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="17" height="9" fill="url(#pattern0_2043_204)"/>
-                                <defs>
-                                <pattern id="pattern0_2043_204" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                <use xlink:href="#image0_2043_204" transform="matrix(0.00588235 0 0 0.0111111 0.235294 0)"/>
-                                </pattern>
-                                <image id="image0_2043_204" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEuElEQVR4nO2dXYhVVRTHf9OdnGpmMpWI7CEwq8e+xpSIKIvqraAPyoooC3oItVCIFKR6MK0HrSjtoZ76ICpN6MsXwRcfIiIryKQMCk2bydGHaKzcsWM9DHIH795n73PWPrN+sGCGuffM2v85d++11l5nDxiGYRiGYRiGYRg90wFGgKXAemAbsAf4EfgDmACOy9c/A9/Ka14EHgOukmsYXbgAWA5sB8YBV9GOAZ/INecyzTkDeADYAfybQNypzF97J/AgMMA0YhhYBRzMKO5UdgB4GphFizkdWAmMNSDwyTYm04r3qVVcJ4uWU2Z7gcW0AD8nvgKcUCDqVOZ92wicSaHMB75UIKTr0b4DLqYwbgKOKhDPRczdN1IIdwN/KRDNRdrvwEyU82jmmNhltiPAApRzO/CPArFcpPmM9GoKmJNTTxcHgbeAZcDNsrjOkti3X76+SH7mX/OuJCStvZPnJ1z4RoFNUlSKoQ+4Rq4x3iaRBxKFcL9IpnZW4lR/BXC4dJGRZKSKwMeBdcBgRh/PBl7osn4cqfDJqT2trpLxfQ9cVqO/C4F9pYnsF6RvKoj8PjDUgN/nAO+UIjJShYsV+TXbAemNQcmeYkTenPkGaBWrKkwXnaadL2n7KSYp2Cerv9Ej90eIPFFzdNEKdkQIva5pp0tsCQgtGv2aORlpJcsj7mb/HiOQ7REFopS1i2lBR9LWEKF9Bc0IZCRi2igmzdXE0kCRD0ht2AhkQ6DQfmckJ06J+SJVUrYFOuC3lnLilFjyTYOvAx3w+3g5cUrs3tQD2x/owDzy4pRY8jwhtAN0NnlxSmxN6oFNBDowg7w4JeaDhKSY0NQjtE0ddBX62aYXQ99BlBOnxFY3Hd7dQl6cEns89cAsYaGr0L6xMynrA//Sb5MXp8T8w6NJeTiiE7Sv0HLwaMA4z9VQJi2iebBLm1vINp2Kwv9LlMfrAePz61YWPgoUerSwjdlheYa81/GtzeXIsojpw/cnl8JTgWO7Ppcjc1vcbjAzsJ/waO7Hmz+PuKufRz8bI/oIs3JfZFf/FehlEfB34Jj8kRQqmxz3ymKjDb/n91PgWI7V1UQf24T+obK23f7IqXBLXQ4OBWZPrgknT8FpwJuRY6g1EXsy0kknYncavpPfiPR9ZxPO7qkg9taG5uxhOdQq1u9rG/D5/19a5fG3H2qORhZMevwtxj6jQTZVcNxJ6Lch8yo+JGfihYZwk82/93IafkT5i4piOwkZn0icRQ7KWvJbAv+eQwHzIip7bgrz0czL8pRrX2Q0sVCukeKgQidrUe72iZ65IcMxEofkaAhfmLoVuFQac2ZIncEfI3GJ7E+ukNemuHsn25/AlSjjtsIPRnEnmV/ol6CUR1ok9mqUc2fhh1c54FUKYXHCxcjVbCoijBAuBHYrEM4FzMk+HCySAUlqTigQ8lQ7Qbmb52thJFFik8PeA+bQIvol3o096yO1+YL/HbSYQZkLY8+oq2r7pTlRTbZXx7bYEuDTGmJvf/2PgbvkkzVtOV/usq3y3yhSiOunqA+kb/C8pgeokY7UFx6SVgW/1/iV/HuQsUmPeYzL9/5Yt11y+tczwD1SAzEMwzAMwzAMwzDogf8Av87oovpCjIAAAAAASUVORK5CYII="/>
-                                </defs>
-                            </svg>
-                            Prosseguir com Google
-                        </a>
-                    </button>
-                </div>
-                <div class="cadastro">
-                    <p>Tem uma conta ?</p>
-                    <a href="/login">Entre</a>
+        <div class="container-md">
+            {{#each groupedResultadosBusca}}
+        <div class="all-cards d-flex">
+            {{#each this}}
+            <div class="col-lg-4 col-md-6 col-sm-12 cards mb-4">
+                <div class="card card-desc" style="width: 18rem;">
+                    <a href="/produto/{{id}}">
+                        <img src="../imagens/{{imagem}}" alt="" class="card-img-top">
+                    </a>
+                    <div class="card-body-site">
+                        <h6>{{name}} - {{generoProd}}</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6>R$:{{preco}}</h6>
+                            <button class="add-car">
+                                <a href="/carrinho" class="text-white">Adicionar ao Carrinho
+                                    <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0.466667C0 0.342899 0.0579481 0.2242 0.161096 0.136683C0.264244 0.0491665 0.404143 0 0.550017 0H2.20007C2.32276 2.87574e-05 2.44191 0.0348606 2.53858 0.0989564C2.63525 0.163052 2.70389 0.252732 2.73358 0.353733L3.1791 1.86667H15.9505C16.0313 1.86673 16.111 1.88188 16.1841 1.91105C16.2572 1.94021 16.3218 1.98267 16.3733 2.03542C16.4249 2.08816 16.4621 2.14989 16.4824 2.21622C16.5027 2.28255 16.5055 2.35185 16.4906 2.4192L14.8406 9.88587C14.817 9.99281 14.7501 10.0894 14.6515 10.1589C14.5528 10.2285 14.4287 10.2666 14.3004 10.2667H4.40014C4.27191 10.2666 4.14775 10.2285 4.04913 10.1589C3.9505 10.0894 3.88361 9.99281 3.86002 9.88587L2.21107 2.4332L1.77105 0.933333H0.550017C0.404143 0.933333 0.264244 0.884167 0.161096 0.79665C0.0579481 0.709133 0 0.590434 0 0.466667ZM3.41231 2.8L4.85665 9.33333H13.8439L15.2883 2.8H3.41231ZM5.50017 10.2667C4.91668 10.2667 4.35708 10.4633 3.94449 10.8134C3.53189 11.1635 3.3001 11.6383 3.3001 12.1333C3.3001 12.6284 3.53189 13.1032 3.94449 13.4533C4.35708 13.8033 4.91668 14 5.50017 14C6.08366 14 6.64326 13.8033 7.05585 13.4533C7.46845 13.1032 7.70024 12.6284 7.70024 12.1333C7.70024 11.6383 7.46845 11.1635 7.05585 10.8134C6.64326 10.4633 6.08366 10.2667 5.50017 10.2667ZM13.2004 10.2667C12.6169 10.2667 12.0573 10.4633 11.6447 10.8134C11.2321 11.1635 11.0003 11.6383 11.0003 12.1333C11.0003 12.6284 11.2321 13.1032 11.6447 13.4533C12.0573 13.8033 12.6169 14 13.2004 14C13.7839 14 14.3435 13.8033 14.7561 13.4533C15.1687 13.1032 15.4005 12.6284 15.4005 12.1333C15.4005 11.6383 15.1687 11.1635 14.7561 10.8134C14.3435 10.4633 13.7839 10.2667 13.2004 10.2667ZM5.50017 11.2C5.79192 11.2 6.07171 11.2983 6.27801 11.4734C6.48431 11.6484 6.6002 11.8858 6.6002 12.1333C6.6002 12.3809 6.48431 12.6183 6.27801 12.7933C6.07171 12.9683 5.79192 13.0667 5.50017 13.0667C5.20842 13.0667 4.92863 12.9683 4.72233 12.7933C4.51603 12.6183 4.40014 12.3809 4.40014 12.1333C4.40014 11.8858 4.51603 11.6484 4.72233 11.4734C4.92863 11.2983 5.20842 11.2 5.50017 11.2ZM13.2004 11.2C13.4922 11.2 13.772 11.2983 13.9782 11.4734C14.1845 11.6484 14.3004 11.8858 14.3004 12.1333C14.3004 12.3809 14.1845 12.6183 13.9782 12.7933C13.772 12.9683 13.4922 13.0667 13.2004 13.0667C12.9087 13.0667 12.6289 12.9683 12.4226 12.7933C12.2163 12.6183 12.1004 12.3809 12.1004 12.1333C12.1004 11.8858 12.2163 11.6484 12.4226 11.4734C12.6289 11.2983 12.9087 11.2 13.2004 11.2Z" fill="black"/>
+                                    </svg>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            {{/each}}
         </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        {{/each}}
+    </div>
     
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

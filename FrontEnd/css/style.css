@@ -112,7 +112,7 @@ a{
 }
 .comprar{
     margin-bottom: 8px;
-    width: 50%;
+    width: 100%;
     height: 30px;
     border: none;
     background-color: #FFFF;
@@ -175,6 +175,9 @@ a{
 .pai-roupas{
     display: flex;
 }
+.all-cards{
+    margin-top: 160px;
+}
 .img-2{
     height: 100%;
 }
@@ -184,6 +187,8 @@ a{
     height: 120px;
     background-color: none;
     margin-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 .card-desc{
     height: 400px;
@@ -612,6 +617,14 @@ a{
     justify-content: center;
     align-items: center;
 }
+.produto-pesquisa{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .classificacao{
     display: flex;
     flex-direction: row;
