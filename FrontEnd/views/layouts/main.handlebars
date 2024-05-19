@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home - Pesadao</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <title>Pesadão</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Actor&family=Kaushan+Script&display=swap" rel="stylesheet">
@@ -15,76 +15,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Micro+5+Charted&display=swap" rel="stylesheet">
 </head>
 <body>
-            <div class="container-menu">
-            <!--1° Navbar -->
-            <div class="navbar navbar-expand-lg primeira-navbar shadow-sm p-2 mb-0  row align-items-center d-flex">
-                <div class="container-fluid">
-                    <div class="col-md-3">
-                            <svg class = "lobinho" width="180" height="50" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <rect width="41" height="30" fill="url(#pattern0_2044_637)"/>
-                                <defs>
-                                <pattern id="pattern0_2044_637" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                    <use xlink:href="#image0_2044_637" transform="matrix(0.00813008 0 0 0.0111111 0.134146 0)"/>
-                                </pattern>
-                                <image id="image0_2044_637" width="90" height="90" xlink:href="data:image/png;base64,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"/>
-                                </defs>
-                            </svg>
-                    </div>
-                    <div class="col-md-5">
-                        <h1>Pesadão</h1>
-                    </div>
-                    <div class="col-md-4 d-flex align-items-center">
-                        <a href="login.html">
-                            <svg width="50" height="30" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0H10V10H0V0Z" fill="white" fill-opacity="0.01"/>
-                                <path d="M5.00001 4.16667C5.80542 4.16667 6.45834 3.51375 6.45834 2.70833C6.45834 1.90292 5.80542 1.25 5.00001 1.25C4.19459 1.25 3.54167 1.90292 3.54167 2.70833C3.54167 3.51375 4.19459 4.16667 5.00001 4.16667Z" fill="white" stroke="black" stroke-width="0.65875" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M1.25 8.5V8.75H8.75V8.5C8.75 7.56658 8.75 7.09987 8.56835 6.74335C8.40856 6.42975 8.15358 6.17477 7.83998 6.01498C7.48346 5.83333 7.01675 5.83333 6.08333 5.83333H3.91667C2.98325 5.83333 2.51654 5.83333 2.16002 6.01498C1.84641 6.17477 1.59144 6.42975 1.43166 6.74335C1.25 7.09987 1.25 7.56658 1.25 8.5Z" fill="white" stroke="black" stroke-width="0.65875" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </a>
-                        <svg width="50" height="30" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0H11.785V11.785H0V0Z" fill="white" fill-opacity="0.01"/>
-                            <path d="M9.5753 7.85667H3.19176L1.96416 2.94625H10.8029L9.5753 7.85667Z" fill="white"/>
-                            <path d="M0.736572 1.47312H1.5959L1.96418 2.94625M1.96418 2.94625L3.19178 7.85667H9.57532L10.8029 2.94625H1.96418Z" stroke="black" stroke-width="0.89875" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M3.19178 10.3119C3.59857 10.3119 3.92834 9.9821 3.92834 9.57531C3.92834 9.16852 3.59857 8.83875 3.19178 8.83875C2.78499 8.83875 2.45522 9.16852 2.45522 9.57531C2.45522 9.9821 2.78499 10.3119 3.19178 10.3119Z" stroke="black" stroke-width="0.89875" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M9.57531 10.3119C9.9821 10.3119 10.3119 9.9821 10.3119 9.57531C10.3119 9.16852 9.9821 8.83875 9.57531 8.83875C9.16852 8.83875 8.83875 9.16852 8.83875 9.57531C8.83875 9.9821 9.16852 10.3119 9.57531 10.3119Z" stroke="black" stroke-width="0.89875" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>    
-                        <form class="d-flex" role="search">
-                            <input id = "search"class="form-control me-2" type="search" placeholder="Buscar Produtos" aria-label="Search">
-                            <button type="submit" id="search-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="navbar navbar-expand-lg bg-light shadow-sm row align-items-center segundo-navbar">
-                <div class="collapse navbar-collapse row align-items-center" id="navbarNav">
-                    <ul class="navbar-nav w-100 justify-content-around" id="menu">
-                        <li class = "nav-item  mr-5">
-                            <a class= "nav-link flex-grow-1" href="#novidades">Novidade</a>
-                        </li>    
-                        <li class = "nav-item  mr-5">
-                            <a class= "nav-link flex-grow-1" href="#feminino">Feminino</a>
-                        </li>
-                        <li class = "nav-item  mr-5">
-                            <a class= "nav-link flex-grow-1" href="#masculino">Masculino</a>
-                        </li>
-                        <li class = "nav-item  mr-5">
-                            <a class= "nav-link flex-grow-1" href="#jaquetas">Jaquetas</a>
-                        </li>
-                        <li class = "nav-item  mr-5">
-                            <a class= "nav-link flex-grow-1" href="#mochilas">Mochilas</a>
-                        </li>
-                        <li class = "nav-item  mr-5">
-                            <a class= "nav-link flex-grow-1" href="/views/index.handlebars">Home</a>
-                        </li>
-                    </ul>
-                </div>
-            </div> 
-        </div>
     {{{body}}}
 </body>
 </html>

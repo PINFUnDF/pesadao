@@ -190,6 +190,9 @@ a{
     max-width: 18rem;
     margin-bottom: 15px;  
 }
+.card-desc img{
+    height: 360px;
+}
 .conteudo-oferta{
     text-align: center;
 }
@@ -224,6 +227,10 @@ a{
     text-decoration: none;
     color: black;
 }
+.add-car-1 a{
+    text-decoration: none;
+    color: black;
+}
 .add-car{
     margin-left: 8px;
     border-style:none;
@@ -232,7 +239,17 @@ a{
     height: 20px;
     background-color: #d9d9d9;
 }
+.add-car-1{
+    border-style:none;
+    font-size: 12px;
+    width: 180px;
+    height: 20px;
+    background-color: #d9d9d9;
+}
 .add-car:hover{
+    background-color: #f5f5f5;
+}
+.add-car-1:hover{
     background-color: #f5f5f5;
 }
 .primeiro-rodape{
@@ -558,4 +575,122 @@ a{
 .buttom-voltar a{
     text-decoration: none;
     color: #000;
+}
+.box-produto{
+    width: 30%;
+    height: 100%;
+    background-color: #d9d9d9;
+    font-family: "Abhaya Libre", serif;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.box-produto form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-produto form input{
+    margin-top: 30px;
+    padding: 0;
+    width: 80%;
+    height: 30px;
+    border: none;
+}
+.checkbox input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*PRODUTO*/
+.produto{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.classificacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+}
+.avaliacao p{
+    font-size: 20px;
+    margin-top:18px;
+}
+.ava{
+    margin-left: 20px;
+    margin-top:18px;
+}
+.avaliacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+.avaliacao svg{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.line{
+    padding: 0;
+    width: 1px;
+    height: 20px;
+}
+.descricao-produto{
+    margin-top:0;
+    margin-left: 30px;
+}
+.descricao-produto h3{
+    font-family: "Abhaya Libre", serif;
+}
+.imagem-produto img{
+    width: 350px;
+    height: 400px;
+}
+.preco{
+    background-color: #D9D9D9;
+    width: 130px;
+    height: auto;
+    margin-top: 10px;
+}
+.preco p{
+    text-align: center;
+    font-size: 25px;
+    font-family: "Abhaya Libre", serif;
+}
+.tamanhos button{
+    border: none;
+    background-color: #d9d9d9;
+}
+.quantidade {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color:#d9d9d9;
+    width: 90px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.quantidade button {
+    border: none;
+    width: 90px;
+    background-color: #d9d9d9;
+    text-align: center;
+}
+.quantidade button:hover{
+    background-color: #b6b3b3;
+}
+
+.quantidade input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: none;
 }

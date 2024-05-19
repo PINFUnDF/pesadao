@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home - Pesadao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Micro+5+Charted&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container-menu">
+            <!--1° Navbar -->
+            <div class="navbar navbar-expand-lg primeira-navbar shadow-sm p-2 mb-0  row align-items-center d-flex">
+                <div class="container-fluid">
+                    <div class="col-md-3">
+                            <svg class = "lobinho" width="180" height="50" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="41" height="30" fill="url(#pattern0_2044_637)"/>
+                                <defs>
+                                <pattern id="pattern0_2044_637" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_2044_637" transform="matrix(0.00813008 0 0 0.0111111 0.134146 0)"/>
+                                </pattern>
+                                <image id="image0_2044_637" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                    </div>
+                    <div class="col-md-5">
+                        <h1>Pesadão</h1>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-center">
+                        <a href="/login" id = "iconLogin">
+                            <svg width="50" height="30" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H10V10H0V0Z" fill="white" fill-opacity="0.01"/>
+                                <path d="M5.00001 4.16667C5.80542 4.16667 6.45834 3.51375 6.45834 2.70833C6.45834 1.90292 5.80542 1.25 5.00001 1.25C4.19459 1.25 3.54167 1.90292 3.54167 2.70833C3.54167 3.51375 4.19459 4.16667 5.00001 4.16667Z" fill="white" stroke="black" stroke-width="0.65875" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.25 8.5V8.75H8.75V8.5C8.75 7.56658 8.75 7.09987 8.56835 6.74335C8.40856 6.42975 8.15358 6.17477 7.83998 6.01498C7.48346 5.83333 7.01675 5.83333 6.08333 5.83333H3.91667C2.98325 5.83333 2.51654 5.83333 2.16002 6.01498C1.84641 6.17477 1.59144 6.42975 1.43166 6.74335C1.25 7.09987 1.25 7.56658 1.25 8.5Z" fill="white" stroke="black" stroke-width="0.65875" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <svg width="50" height="30" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0H11.785V11.785H0V0Z" fill="white" fill-opacity="0.01"/>
+                            <path d="M9.5753 7.85667H3.19176L1.96416 2.94625H10.8029L9.5753 7.85667Z" fill="white"/>
+                            <path d="M0.736572 1.47312H1.5959L1.96418 2.94625M1.96418 2.94625L3.19178 7.85667H9.57532L10.8029 2.94625H1.96418Z" stroke="black" stroke-width="0.89875" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.19178 10.3119C3.59857 10.3119 3.92834 9.9821 3.92834 9.57531C3.92834 9.16852 3.59857 8.83875 3.19178 8.83875C2.78499 8.83875 2.45522 9.16852 2.45522 9.57531C2.45522 9.9821 2.78499 10.3119 3.19178 10.3119Z" stroke="black" stroke-width="0.89875" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.57531 10.3119C9.9821 10.3119 10.3119 9.9821 10.3119 9.57531C10.3119 9.16852 9.9821 8.83875 9.57531 8.83875C9.16852 8.83875 8.83875 9.16852 8.83875 9.57531C8.83875 9.9821 9.16852 10.3119 9.57531 10.3119Z" stroke="black" stroke-width="0.89875" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>    
+                        <form class="d-flex" role="search">
+                            <input id = "search"class="form-control me-2" type="search" placeholder="Buscar Produtos" aria-label="Search">
+                            <button type="submit" id="search-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar navbar-expand-lg bg-light shadow-sm row align-items-center segundo-navbar">
+                <div class="collapse navbar-collapse row align-items-center" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-around" id="menu">
+                        <li class = "nav-item  mr-5">
+                            <a class= "nav-link flex-grow-1" href="/#novidades">Novidade</a>
+                        </li>    
+                        <li class = "nav-item  mr-5">
+                            <a class= "nav-link flex-grow-1" href="/#feminino">Feminino</a>
+                        </li>
+                        <li class = "nav-item  mr-5">
+                            <a class= "nav-link flex-grow-1" href="/#masculino">Masculino</a>
+                        </li>
+                        <li class = "nav-item  mr-5">
+                            <a class= "nav-link flex-grow-1" href="/#jaquetas">Jaquetas</a>
+                        </li>
+                        <li class = "nav-item  mr-5">
+                            <a class= "nav-link flex-grow-1" href="/#mochilas">Mochilas</a>
+                        </li>
+                        <li class = "nav-item  mr-5">
+                            <a class= "nav-link flex-grow-1" href="/">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="produto">
+            <div class="imagem-produto">
+                <img src="../imagens/{{produto.imagem}}" alt="{{produto.name}}">
+            </div>
+            <div class="descricao-produto">
+                <!--Titulo Produto-->
+                <h3>{{produto.name}} - {{produto.generoProd}}</h3>
+                <!--AVALIAÇÃO-->
+                <div class="classificacao">
+                    <div class="avaliacao">
+                        <p>2.0</p>
+                        <svg width="54" height="10" viewBox="0 0 54 10" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="16" height="10" fill="url(#pattern0_0_1)"/>
+                            <rect x="11" width="16" height="10" fill="url(#pattern1_0_1)"/>
+                            <g clip-path="url(#clip0_0_1)">
+                            <path d="M26.6122 9.28126C26.5683 9.55876 26.8147 9.77564 27.0318 9.65189L29.5012 8.24189L31.97 9.65189C32.1872 9.77564 32.4335 9.55876 32.3897 9.28189L31.9228 6.32564L33.9039 4.22814C34.0895 4.03189 33.9939 3.67314 33.7453 3.63439L30.9902 3.19939L29.7617 0.495013C29.7383 0.440193 29.7013 0.393877 29.6552 0.361446C29.609 0.329014 29.5555 0.311798 29.5009 0.311798C29.4463 0.311798 29.3928 0.329014 29.3467 0.361446C29.3005 0.393877 29.2636 0.440193 29.2402 0.495013L28.0117 3.20001L25.2566 3.63501C25.0085 3.67376 24.9123 4.03251 25.0974 4.22876L27.0791 6.32626L26.6122 9.28251V9.28126ZM29.3713 7.55189L27.2979 8.73564L27.6883 6.26251C27.6977 6.20558 27.6942 6.14695 27.6782 6.09187C27.6622 6.03679 27.6342 5.98697 27.5966 5.94689L25.962 4.21564L28.2412 3.85564C28.2883 3.84747 28.333 3.82686 28.3715 3.79554C28.4099 3.76422 28.4411 3.7231 28.4623 3.67564L29.5001 1.38939L30.539 3.67564C30.5602 3.7231 30.5914 3.76422 30.6298 3.79554C30.6683 3.82686 30.713 3.84747 30.7601 3.85564L33.0393 4.21501L31.4047 5.94626C31.3671 5.98641 31.339 6.03633 31.323 6.09153C31.3069 6.14673 31.3035 6.20549 31.313 6.26251L31.7034 8.73564L29.63 7.55189C29.59 7.52877 29.5455 7.5167 29.5004 7.5167C29.4552 7.5167 29.4113 7.52877 29.3713 7.55189Z" fill="black"/>
+                            </g>
+                            <g clip-path="url(#clip1_0_1)">
+                            <path d="M36.6122 9.28126C36.5683 9.55876 36.8147 9.77564 37.0318 9.65189L39.5012 8.24189L41.97 9.65189C42.1872 9.77564 42.4335 9.55876 42.3897 9.28189L41.9228 6.32564L43.9039 4.22814C44.0895 4.03189 43.9939 3.67314 43.7453 3.63439L40.9902 3.19939L39.7617 0.495013C39.7383 0.440193 39.7013 0.393877 39.6552 0.361446C39.609 0.329014 39.5555 0.311798 39.5009 0.311798C39.4463 0.311798 39.3928 0.329014 39.3467 0.361446C39.3005 0.393877 39.2636 0.440193 39.2402 0.495013L38.0117 3.20001L35.2566 3.63501C35.0085 3.67376 34.9123 4.03251 35.0974 4.22876L37.0791 6.32626L36.6122 9.28251V9.28126ZM39.3713 7.55189L37.2979 8.73564L37.6883 6.26251C37.6977 6.20558 37.6942 6.14695 37.6782 6.09187C37.6622 6.03679 37.6342 5.98697 37.5966 5.94689L35.962 4.21564L38.2412 3.85564C38.2883 3.84747 38.333 3.82686 38.3715 3.79554C38.4099 3.76422 38.4411 3.7231 38.4623 3.67564L39.5001 1.38939L40.539 3.67564C40.5602 3.7231 40.5914 3.76422 40.6298 3.79554C40.6683 3.82686 40.713 3.84747 40.7601 3.85564L43.0393 4.21501L41.4047 5.94626C41.3671 5.98641 41.339 6.03633 41.323 6.09153C41.3069 6.14673 41.3035 6.20549 41.313 6.26251L41.7034 8.73564L39.63 7.55189C39.59 7.52877 39.5455 7.5167 39.5004 7.5167C39.4552 7.5167 39.4113 7.52877 39.3713 7.55189Z" fill="black"/>
+                            </g>
+                            <g clip-path="url(#clip2_0_1)">
+                            <path d="M46.6122 9.28126C46.5683 9.55876 46.8147 9.77564 47.0318 9.65189L49.5012 8.24189L51.97 9.65189C52.1872 9.77564 52.4335 9.55876 52.3897 9.28189L51.9228 6.32564L53.9039 4.22814C54.0895 4.03189 53.9939 3.67314 53.7453 3.63439L50.9902 3.19939L49.7617 0.495013C49.7383 0.440193 49.7013 0.393877 49.6552 0.361446C49.609 0.329014 49.5555 0.311798 49.5009 0.311798C49.4463 0.311798 49.3928 0.329014 49.3467 0.361446C49.3005 0.393877 49.2636 0.440193 49.2402 0.495013L48.0117 3.20001L45.2566 3.63501C45.0085 3.67376 44.9123 4.03251 45.0974 4.22876L47.0791 6.32626L46.6122 9.28251V9.28126ZM49.3713 7.55189L47.2979 8.73564L47.6883 6.26251C47.6977 6.20558 47.6942 6.14695 47.6782 6.09187C47.6622 6.03679 47.6342 5.98697 47.5966 5.94689L45.962 4.21564L48.2412 3.85564C48.2883 3.84747 48.333 3.82686 48.3715 3.79554C48.4099 3.76422 48.4411 3.7231 48.4623 3.67564L49.5001 1.38939L50.539 3.67564C50.5602 3.7231 50.5914 3.76422 50.6298 3.79554C50.6683 3.82686 50.713 3.84747 50.7601 3.85564L53.0393 4.21501L51.4047 5.94626C51.3671 5.98641 51.339 6.03633 51.323 6.09153C51.3069 6.14673 51.3035 6.20549 51.313 6.26251L51.7034 8.73564L49.63 7.55189C49.59 7.52877 49.5455 7.5167 49.5004 7.5167C49.4552 7.5167 49.4113 7.52877 49.3713 7.55189Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <pattern id="pattern0_0_1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_0_1" transform="matrix(0.00694444 0 0 0.0111111 0.1875 0)"/>
+                            </pattern>
+                            <pattern id="pattern1_0_1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_0_1" transform="matrix(0.00694444 0 0 0.0111111 0.1875 0)"/>
+                            </pattern>
+                            <clipPath id="clip0_0_1">
+                            <rect width="9" height="10" fill="white" transform="translate(25)"/>
+                            </clipPath>
+                            <clipPath id="clip1_0_1">
+                            <rect width="9" height="10" fill="white" transform="translate(35)"/>
+                            </clipPath>
+                            <clipPath id="clip2_0_1">
+                            <rect width="9" height="10" fill="white" transform="translate(45)"/>
+                            </clipPath>
+                            <image id="image0_0_1" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAES0lEQVR4nO2dW4hVVRjHf9NoV4ys6dBYmmX0UElkN3oI0swKYSCKIHwx7EZEadHtLellXqKip95iHoWQKLrY3TIrE7MUySgqsBvZlZJ0mhULvg2Hw9ln9mWds75vn/WD/8vAYX/fn9nf3mutb60NiUQikUgkTDEHuAZYCYzGDqapzAW2AU70nhifCMyaNpMz+b8lAvNSF6NfTC6H5STg3y5GHwZOTmaH49YuJmdam4wOxys9jH45GR2G+Tllo718nJLMrs/tPUzOdFsyuj6vFzB6SzK6HmPAkQJGTwOtZHZ17ipgcqY7a1xn6HmrhNFvDr1bFTlNSkJRo/8DxqtebJi5p4TJme6OHbRFtlYw+p3YQVtjXEpBWaP9b06PHbwl7qtgcqZ7YwdviW01jH4/dvBWOAOYqWG0/+2i2ElY4P4aJmfaEDsJC3wYwOjtsZPQzqKaZaO9fCyOnYxmHgpgcqYHYyejmU8CGv1x7GS0cnagstGuc2InpZFHA5vs9QhDwKis983v0Lj893bq0z4YvSvnWmM5sQ2cy4DXgK869BPwaxeFvuWdIk3n5PxjF39eBS4tavKJwEEFCTqj+gWYV8ToKxUE64zriiJGnwocUhCsM6p/5BlQiAngTwVBO2P6S7wrxbny1I4dvDOivcD5VOQY4GkFSTjlmgKOJwA3yCtN7IScMvnyeguBOVOmH2Mn55RoZz+H+H7PyGTDByiugJ6Vstp3JoZ0UPMHcDMDZqEshLoh0Q6ZJ4mCLyWPVezBcEY0I29eR6OAlTLJ4ho4b7EahW0CVdq4nFJ9pHndcbQBpWRGSoXfqaueFcD3CkxzJfUzcD3GaMnigTOit4EFGGUEeLhkQ3mMUjHZlNMSrgIOKDC1U35pbhUNowXsV2Bupi+aupNrrrIZwN+svFlUGdQ4ZfJvR43jGQXGdsq/LzeKEeA7BcZ26luJrTFcosDUPC2jQTyuwNA8baRBfK7A0DztpiEsUWDmbIo2oR+SBxQYOZv8BiXzbFVg5Gx6F+O0lE8oOdG09ByaZZ0CE11B+SPfzPJCHwzZ3qdGHh+rSXwv2t+Bb+9JmQiaI/PchwO3256AQW4MaMI30iDfyeXAlwGv43sMzTEVKPlNcjZpHvOkRSvEtZ7DGKPSE1En6d9LHlt8U4A2tYPWzqReUTPhDyqO1hbKImuday/HEFWb149IX0idhdIROcGm13mmvfQUhvi6QoL7gIsDxrAU+Kzig9fEHPWyCslN9enV6ji5u8r2c1+EATaW7AyaGEBM1wI/lIjLly/17C6YzJYBdwa1cr4T0E1+N5pqFhdI4pCM6o6KEJ+vvXcUHLGehWI2zBL8HuDC2EEC5xXYQ7keg2fxzwBPDGqDTUGOBZ7s8aBU/e2AboOFA/LZJa2symkxfgPFrO44wfx5Ix86GAM2t8Xtc7gO5SyV+nY1NtvW1gMXxA4kkUgkEolEIoFm/gf7oN3MMQCYawAAAABJRU5ErkJggg=="/>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="line"></div>
+                    <p class = "ava">4 mil avaliações</p>
+                </div>
+                <div class="preco">
+                    <p>R$: {{produto.preco}}</p>
+                </div>
+                <div class="tamanhos">
+                    <button>P</button>
+                    <button>M</button>
+                    <button>G</button>
+                    <button>GG</button>
+                </div>
+                <div class="quantidade">
+                    <button id="decrease" class="">-</button>
+                    <input id="quantity" type="text" value="1" readonly>
+                    <button id="increase" class="">+</button>
+                </div>
+                <button class="add-car-1">
+                    <a href="">Adicionar ao Carrinho
+                        <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0.466667C0 0.342899 0.0579481 0.2242 0.161096 0.136683C0.264244 0.0491665 0.404143 0 0.550017 0H2.20007C2.32276 2.87574e-05 2.44191 0.0348606 2.53858 0.0989564C2.63525 0.163052 2.70389 0.252732 2.73358 0.353733L3.1791 1.86667H15.9505C16.0313 1.86673 16.111 1.88188 16.1841 1.91105C16.2572 1.94021 16.3218 1.98267 16.3733 2.03542C16.4249 2.08816 16.4621 2.14989 16.4824 2.21622C16.5027 2.28255 16.5055 2.35185 16.4906 2.4192L14.8406 9.88587C14.817 9.99281 14.7501 10.0894 14.6515 10.1589C14.5528 10.2285 14.4287 10.2666 14.3004 10.2667H4.40014C4.27191 10.2666 4.14775 10.2285 4.04913 10.1589C3.9505 10.0894 3.88361 9.99281 3.86002 9.88587L2.21107 2.4332L1.77105 0.933333H0.550017C0.404143 0.933333 0.264244 0.884167 0.161096 0.79665C0.0579481 0.709133 0 0.590434 0 0.466667ZM3.41231 2.8L4.85665 9.33333H13.8439L15.2883 2.8H3.41231ZM5.50017 10.2667C4.91668 10.2667 4.35708 10.4633 3.94449 10.8134C3.53189 11.1635 3.3001 11.6383 3.3001 12.1333C3.3001 12.6284 3.53189 13.1032 3.94449 13.4533C4.35708 13.8033 4.91668 14 5.50017 14C6.08366 14 6.64326 13.8033 7.05585 13.4533C7.46845 13.1032 7.70024 12.6284 7.70024 12.1333C7.70024 11.6383 7.46845 11.1635 7.05585 10.8134C6.64326 10.4633 6.08366 10.2667 5.50017 10.2667ZM13.2004 10.2667C12.6169 10.2667 12.0573 10.4633 11.6447 10.8134C11.2321 11.1635 11.0003 11.6383 11.0003 12.1333C11.0003 12.6284 11.2321 13.1032 11.6447 13.4533C12.0573 13.8033 12.6169 14 13.2004 14C13.7839 14 14.3435 13.8033 14.7561 13.4533C15.1687 13.1032 15.4005 12.6284 15.4005 12.1333C15.4005 11.6383 15.1687 11.1635 14.7561 10.8134C14.3435 10.4633 13.7839 10.2667 13.2004 10.2667ZM5.50017 11.2C5.79192 11.2 6.07171 11.2983 6.27801 11.4734C6.48431 11.6484 6.6002 11.8858 6.6002 12.1333C6.6002 12.3809 6.48431 12.6183 6.27801 12.7933C6.07171 12.9683 5.79192 13.0667 5.50017 13.0667C5.20842 13.0667 4.92863 12.9683 4.72233 12.7933C4.51603 12.6183 4.40014 12.3809 4.40014 12.1333C4.40014 11.8858 4.51603 11.6484 4.72233 11.4734C4.92863 11.2983 5.20842 11.2 5.50017 11.2ZM13.2004 11.2C13.4922 11.2 13.772 11.2983 13.9782 11.4734C14.1845 11.6484 14.3004 11.8858 14.3004 12.1333C14.3004 12.3809 14.1845 12.6183 13.9782 12.7933C13.772 12.9683 13.4922 13.0667 13.2004 13.0667C12.9087 13.0667 12.6289 12.9683 12.4226 12.7933C12.2163 12.6183 12.1004 12.3809 12.1004 12.1333C12.1004 11.8858 12.2163 11.6484 12.4226 11.4734C12.6289 11.2983 12.9087 11.2 13.2004 11.2Z" fill="black"/>
+                        </svg>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+        const decreaseButton = document.getElementById('decrease');
+        const increaseButton = document.getElementById('increase');
+        const quantityInput = document.getElementById('quantity');
+
+        decreaseButton.addEventListener('click', () => {
+            let quantity = parseInt(quantityInput.value);
+            if (quantity > 1) {
+                quantityInput.value = quantity - 1;
+            }
+        });
+
+        increaseButton.addEventListener('click', () => {
+            let quantity = parseInt(quantityInput.value);
+            quantityInput.value = quantity + 1;
+        });
+    });
+
+    </script>
+</body>
+</html>
