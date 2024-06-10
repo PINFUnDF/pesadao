@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Micro+5+Charted&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container-fluid">
@@ -54,8 +55,8 @@
                                 <path d="M9.57531 10.3119C9.9821 10.3119 10.3119 9.9821 10.3119 9.57531C10.3119 9.16852 9.9821 8.83875 9.57531 8.83875C9.16852 8.83875 8.83875 9.16852 8.83875 9.57531C8.83875 9.9821 9.16852 10.3119 9.57531 10.3119Z" stroke="black" stroke-width="0.89875" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>     
-                        <form class="d-flex" role="search" action="/resultadoPesquisa" method="GET">
-                            <input id = "search" name="name" class="form-control me-2" type="search" placeholder="Buscar Produtos" aria-label="Search">
+                        <form class="d-flex" role="search">
+                            <input id = "search"class="form-control me-2" type="search" placeholder="Buscar Produtos" aria-label="Search">
                             <button type="submit" id="search-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -89,25 +90,131 @@
             </div> 
         </div>
         <!--Fim do Menu-->
-        <!--Inicio do Formulário de Login -->
-        <div class="container-login">
-            <div class="row">
-                <h3>FUNCIONÁRIOS</h3>
+        <!--Inicio do Carrrinho -->
+        <div class="container-carrinho">
+            <div class="col-lg-2">
+                <div class="titulo-cart">
+                    <h3>MEU CARRINHO</h3>
+                </div>
             </div>
-            <div class="row desconto">
-                <h6>CADASTRO DE PRODUTOS</h6>
+            <div class="col-lg-10 box-dados">
+                <div class="endereco">
+                    <div class="titulo-div">
+                        <svg width="40" height="40" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="16" height="9" fill="url(#pattern0_2046_963)"/>
+                            <defs>
+                            <pattern id="pattern0_2046_963" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_2046_963" transform="matrix(0.00625 0 0 0.0111111 0.21875 0)"/>
+                            </pattern>
+                            <image id="image0_2046_963" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEQ0lEQVR4nO2dTYiWVRTHf41J2ow25VibxqAW46B9rHKVJZEpgmahJYgbR9tFm6CCRARRW2WbyEULiWqKEMGNX1AiiKaTLSodNcrGSShFMOxD6MjF42ZonPfjueee53nuD/4wDPO+zzn/ue997nPuxwuZTCaTyWQydaYXWAVsAgaBb4FzwGXgH9Vl/d0Q8Jn+7Sv62sw4TAIWAjuAM4C0qfAeHwLPAR3jXbROzAK2ASMFmDuewntv1WvVjoeB7cDfEQ0eq3+BncBsakCntq7rhgaP1XX9J0+norwEXEho8P91KcupEHdpCxKnCt3JVErOQzo0E+caKvOwsB8478BEaVCjwGOUjHnAJQfmSZMKMT9JSZhTUpNFdaUMLftB4BcHZkkBI5Jwf3E7uhhyYJIUpO+AKTjkAwfmSMF6H4cPI1JRLcMJ0yIXhSSxfgW6cMB7DsyQyHo3tcl9iQtEYlj5eySl0R85MEGMFCYlktCrU0qpDRDDVp1kbL3NQfJirC3WJnfo3VhqphGd3zRjoYOkJZGetTR6h4OEJZHCE7AZZ42T2wsM6HCyUxUmWdcB+4xjOW1l8izDpE4BTzUQ03w1wCquUKWMziqjZL4CupuI617ga6PYXsaATUYtubuF2ILZwwbxbcSAQYNEnmkjvvkG8X2CAbGL+/sKiPFA5BiPY8DPkZNYW0CM6yPH+BMG/BE5ib4CYpwdOcbfMSB2IamrgBi7IscYFmdG568SGD09cozXMOBiCbqO/sgx/oYBpyInMVBAjK9GjvEHDDgaOYn9BcR4MHKMRzDg08hJCLCgjfieNojvYwx40yCRc0BPC7HdV9Bmo4n0BgYsNkhEtEAUahfNmHzIKLbnMeAB4D+jhIYbrHssMGrJornfjxHHjZIS1QF9rO7XcXaX/rze4MY3Vscw5B3j5MSR3rI0+lEHCUsihU+SKcccJC3G+oYErHaQuBgrbOo3Z3LNFtGMaM5JeN2BAWKk10jIZONpfkmkH1O25lssdWCERFZ4GnbBLgdmSCR9gSN6tBguFdMoMANnLDGsgYiBQi6LcIrFKiYx0gYcc4fRSiaJrC81F9d06lSPlFSHgbspCfckKKVKATrZ5GSDC2bqxnUpkcmtTJ+5oFs/iuJcRz0O41rps/c4MHM87S5TnzwRk/S8O3Gm7dbb2axYA/zpwOCrWk+vNH1640ll8vfAXGrClESHDu6sUn/cDMsNVqeKFrxeoOZ061nPsUz+vMzj4xis1FPOizI4vNeK1El5pbegXV8nynzWqBU9bW7KDAvlc1fRIE+0eFp62F/zeKMXydxkSwtGb9bXZpo8T2+0CZMvVvk4+dgMGG8yqi13NrjsLOlyrarwdgNGh301mTbpmWC37rUqFO29MHgbo8N2vExBvHgboyv1XSqpmapn7481+UoVvkPFGxvLtpqorHSosedVYWdY/gq9TCZDhbkB9a4D7gPF080AAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                        <h3>DADOS DE ENTREGA</h3>
+                    </div>
+                    <div class="inputs-dados">
+                        <div class="col-md-6 input-sep">
+                            <input type="text" placeholder="  Nome">
+                            <input type="text" placeholder="  Número de Telefone">
+                            <input type="text" placeholder="  CEP">
+                        </div>
+                        <div class="col-md-6 input-sep">
+                            <input type="text" placeholder="  Endereço">
+                            <input type="text" placeholder="  Bairro">
+                            <input type="text" placeholder="  Cidade - Estado">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagamento">
+                    <svg width="30" height="20" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="20" height="16" fill="url(#pattern0_2046_980)"/>
+                        <defs>
+                        <pattern id="pattern0_2046_980" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_2046_980" transform="matrix(0.00888889 0 0 0.0111111 0.1 0)"/>
+                        </pattern>
+                        <image id="image0_2046_980" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADhklEQVR4nO3cS2wNURzH8W9L1aOhFl7xioqQiHQhQT0S6UbCAokNsSASC0EjIiQWHrGwZeG5EQkRQVjYeKeLVkVURYgmEvHWpN6P0nJk6hClt3Pu3Hn8753/J/l30U5n7vwynTnnzDkFpZRSSimllFJKKaWUUgnrC9QADcBHwOR5eedwHVgPlCLEKKBJQDhR1W17jolfyU0Cwogj7ESv7BoBIcRV65IMukFAAHFVfZJBfxAQQFzlnWuo+gCzgDXAAeA8cAd4CLQCr4Hv9uAqS/2AZTbUbJpnylF/YIu9UoP8OSkHc4DHOd63lI9NQHsIDwiVQW9gf4hPYtWNcuCyY4BvgLPAVmCpvc2MBwbbB+dvJmXlqwK457Cji8B828RzYVJWPaoCWnx28NIGnC2TsspoCfDZYcBkTICQEXDiIoKu+asHl6lOAwMIzqSsuvDur0ccfmkPUJxDyKQ5aK9VcMVn46/ACsJhUlZ/Whb3fTb0utpzQwqZNAbttSxe+WzUDEwkXCZlRZvPBhdshyVsJmXV4w8PASURhIyAExcRdAewmWiZlNV/33gfsKeXRNAdtjk6zY6Pe+366bb52SY56EfAlBhCJoQPfg6YRGaVwBOJQdcBw4iPCViNQLXjMSoFXdmdX47bCS1xMlnWM2BlgB7pXilBbwOKiJ9xrE/AjhzGVWZICTopxqd+ACeBsTkep0xAyGKDrrc91jCUCwhZXNDNwKKQj1MlIGQxQbfaMfAoeqH7BISceNDfgIPAkIiOMdUO7aY66DPAhAj374X8XEDAiQcdpeUCl2kUlFI7zmGE1TsKyDjgpoBQxU1ED9MCO/faCK215LlewC7bizRCqzGL2VsiDQUuCQjSL+SR5LGZwFMBQWZar1Jnbxd5fSWvduiEtNtXcUmMSua9MuCEwxX11C5YUgF4r6zuOoR8FRge5ACKzhVffr08r9Wx27ZCVES9vLfA4mx3rn4ZbXtTfiHfsvMGVQDVDnMBvTr6z5oY5ajINsn8JsB/AVa57lR1VeEwN9urBzFO8CkoJcBGO6XAL+RTwMCkP3C+GWTfEbosc9ZenoNiO81sMjAP2AnUZvEez5udNJsCYYTWNWAEBSTpQE03t4rthdjLM4Kq1s4ALUhGQN0AFhb6sGZS4bYAh0OcYydeHK/aX9h/I3kM2GCXP+S68lYppZRSSimllFJKKaUUeeMnKwwu2fgoLkAAAAAASUVORK5CYII="/>
+                        </defs>
+                    </svg>
+                    <h3>MÉTODOS DE PAGAMENTO</h3>
+                    <div class="options-pay">
+                        <input type="button" value="PIX">
+                        <input type="button" value="BOLETO">
+                        <input type="button" value="CARTÃO">
+                    </div>
+                </div>
+
+               <div class="resumo-compra">
+                    <div class="titulo-compras">
+                        <h3>RESUMO DO PEDIDO</h3>
+                    </div>
+                    <div class="titulos-infos">
+                        <span>Preço Unitário</span>
+                        <span>Quantidade</span>
+                        <span>Subtotal de Itens</span>
+                    </div>
+                </div>
+
+                <div class="produto-item">
+                     {{#if produtos.length}}
+                            <ul>
+                                {{#each produtos}}
+                                    <div class="imagem-produto-2">
+                                        <img src="../imagens/{{this.imagem}}" alt="" class="produto-imagem">
+                                        <div class="parte-esquerda">
+                                            <span class="produto-nome">{{this.name}}</span>
+                                            <input type="button" value="Remover Produto" onclick="removeProduto('{{this.id}}')">
+                                        </div>
+                                        <div class="tabela">
+                                            <span>R$: {{this.preco}}</span>
+                                            <!--Isto deve ser a quantidade de itens-->
+                                            <span>{{this.quantidade}}</span>
+                                            <!--Isto deve ser o preço * a qtd de itens-->
+                                            <span>R$: {{this.precoTotalFormatted}}</span>   
+                                        </div>
+                                    </div>
+                                {{/each}}
+                                <span class="precototal">Preço total {{totalItens}} Itens:{{precoTotal}}</span>
+                                <div class="butoes-carrinho">
+                                        <div class="continuar-comprando">
+                                            <a href="/"><input type="button" value="CONTINUAR COMPRANDO"></a>
+                                        </div>
+                                        <div class="finalizar-compra">
+                                            <a href="/final"><input type="button" value="FINALIZAR COMPRA"></a>
+                                        </div>
+                                    </div>
+                            </ul>
+                        {{else}}
+                            <p>O carrinho está vazio.</p>
+                        {{/if}}
+                </div>
             </div>
-            <div class="container-md box-produto">
-                <form action="/cadastroProduto" method="POST" enctype="multipart/form-data">
-                    <input type="text" name="nomeProduto"  placeholder="  Nome do Produto">
-                    <input type="text" name="generoProduto"  placeholder="  Genero do Produto">
-                    <input type="text" name="precoProduto"  placeholder="Preço do Produto">
-                    <input type="file" name="imagemProduto">
-                    <input type="submit" value="CONTINUAR" id="loginbtn">
-                </form>
-            </div>
+            <div class="col-lg-2"></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function removeProduto(productId) {
+    // Envia uma solicitação para o servidor para remover o produto do carrinho
+    fetch('/remove-from-cart', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ productId: productId })
+    })
+    .then(response => {
+        if (response.ok) {
+            // Atualiza a página após a remoção do produto
+            window.location.reload();
+        } else {
+            console.error('Erro ao remover produto do carrinho');
+        }
+    })
+    .catch(error => {
+        console.error('Erro ao remover produto do carrinho:', error);
+    });
+}
+
+    </script>
 </body>
 </html>

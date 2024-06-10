@@ -2,7 +2,7 @@
 const express = require('express');
 const session =  require('express-session');
 const fileupload = require('express-fileupload')
-
+const handlebars = require('handlebars');
 //Importar módulo express-handlebars
 const {engine} = require('express-handlebars');
 
@@ -54,6 +54,19 @@ conexao.connect(function(erro){
     if(erro) throw erro;
     console.log("conexão efetuada com sucesso");
 });
+
+handlebars.registerHelper('carrinho', function(index, options) {
+    // Verifica se o índice está dentro dos limites do carrinho
+    if (index < this.length) {
+        // Retorna o ID do produto no índice especificado
+        return this[index];
+    } else {
+        // Se o índice estiver fora dos limites, retorna vazio
+        return '';
+    }
+});
+
+
 //ROTAS GET
         app.get('/', (req, res) => {
             let sqlFemininos = `SELECT * FROM produtos WHERE generoProd = 'Feminino' OR generoProd = 'Feminina'`;
@@ -151,6 +164,11 @@ conexao.connect(function(erro){
             res.render('cadastroProduto', {title: 'Cadastrar Produtos'});
         });
 
+        //Rota para finalizar compra
+        app.get('/final', function(req,res){
+            res.render('final', {title: 'Compra Feita'})
+        });
+
         //Rota Login
         app.get('/login', function(req, res){
             res.render('login', { title: 'Login - Pesadão' });
@@ -160,6 +178,61 @@ conexao.connect(function(erro){
         app.get('/resLogin', function(req, res){
             res.render('resLogin',  { title: 'Welcome - Pesadão', nomeCliente: req.session.nomeCliente });
         });
+        
+        //Rota para carrinho
+        // Rota para carrinho
+                        // Rota GET para a página carrinho
+app.get('/carrinho', function(req, res){
+    // Rota para visualizar o carrinho
+    const cart = req.session.cart || [];
+    if (!Array.isArray(cart)) {
+        console.error('O carrinho não é um array:', cart);
+        res.status(500).send('Erro ao processar o carrinho');
+        return;
+    }
+
+    if (cart.length === 0) {
+        res.render('carrinho', { title: 'Carrinho - Pesadão', produtos: [], totalItens: 0, precoTotal: 0 });
+        return;
+    }
+
+    // Consulta os detalhes dos produtos no carrinho
+    const placeholders = cart.map(() => '?').join(',');
+    const sql = `SELECT * FROM produtos WHERE id IN (${placeholders})`;
+
+    conexao.query(sql, cart, function(erro, resultados) {
+        if (erro) {
+            console.error(erro);
+            res.status(500).send('Erro ao buscar produtos do carrinho');
+        } else {
+            // Calcula a quantidade específica de cada produto e o preço total multiplicado pela quantidade
+            const cartCount = cart.reduce((acc, productId) => {
+                acc[productId] = (acc[productId] || 0) + 1;
+                return acc;
+            }, {});
+
+            // Calcula o preço total de cada produto multiplicado pela quantidade
+            resultados.forEach(produto => {
+                produto.quantidade = cartCount[produto.id];
+    
+                // Substituir vírgula por ponto no preço e converter para número
+                produto.preco = parseFloat(produto.preco.replace(',', '.'));
+            
+                // Calcular o preço total
+                produto.precoTotal = produto.preco * produto.quantidade;
+            
+                produto.precoTotalFormatted = produto.precoTotal.toFixed(2); 
+            });
+            
+
+            // Calcula o número total de itens e o preço total do carrinho
+            const totalItens = Object.values(cartCount).reduce((acc, count) => acc + count, 0);
+            const precoTotal = resultados.reduce((acc, produto) => acc + parseFloat(produto.precoTotal), 0).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            res.render('carrinho', { title: 'Carrinho - Pesadão', produtos: resultados, totalItens, precoTotal });
+        }
+    });
+});
 
         //Rota para Produtos
         app.get('/produto/:id', function(req, res){
@@ -282,6 +355,55 @@ conexao.connect(function(erro){
                 res.status(400).send('Nenhuma imagem fornecida');
             }
         });
+        app.post('/add-to-cart', function(req, res){
+            const productId = req.body.productId;
+            console.log(`Adicionando produto com ID: ${productId} ao carrinho`);
+        
+            // Verifica se a sessão do carrinho já existe, senão inicializa
+            if (!req.session.cart) {
+                req.session.cart = [];
+            }
+        
+            // Adiciona o ID do produto ao carrinho
+            req.session.cart.push(productId);
+            console.log('Carrinho atual:', req.session.cart);
+            
+            // Converte o carrinho em um objeto contendo a contagem de cada produto
+            const cartCount = req.session.cart.reduce((acc, productId) => {
+                acc[productId] = (acc[productId] || 0) + 1;
+                return acc;
+            }, {});
+        
+            // Envia uma resposta de sucesso com o carrinho atualizado
+            res.json({ success: true, cart: cartCount });
+        });
+        
+        app.post('/remove-from-cart', function(req, res){
+            const productId = req.body.productId;
+            console.log(`Removendo produto com ID: ${productId} do carrinho`);
+        
+            // Verifica se a sessão do carrinho existe e se é um array
+            if (!req.session.cart || !Array.isArray(req.session.cart)) {
+                console.error('Carrinho não encontrado ou não é um array:', req.session.cart);
+                res.status(500).send('Erro ao processar o carrinho');
+                return;
+            }
+        
+            // Encontra o índice do produto no carrinho
+            const index = req.session.cart.findIndex(item => item === productId);
+        
+            // Remove o produto do carrinho se encontrado
+            if (index !== -1) {
+                req.session.cart.splice(index, 1);
+                console.log('Produto removido com sucesso do carrinho:', productId);
+                res.json({ success: true });
+            } else {
+                console.error('Produto não encontrado no carrinho:', productId);
+                res.status(404).json({ success: false, message: 'Produto não encontrado no carrinho' });
+            }
+        });
+        
+        
         // Rota para verificar o login
         app.post('/login', function(req, res) {
         let email = req.body.email;
