@@ -11,11 +11,11 @@
 
 - Requisitos e Arquitetura: momento em que se define quais funcionalidades, estrutura e design o site deve ter. Teve duração de duas semanas, sendo iniciado dia 18/03/2024 e finalizado dia 01/04/2024;
 
-- Prototipação: é o processo de criação de um protótipo, ou seja, um modelo intermediário de um produto ou sistema que será submetido a testes. Tem o intuito de se verificar aspectos que precisam ser refinados para se chegar ao produto final, antecipando problemas e prevenindo gastos desnecessários. A tecnologia utilizada nessa etapa foi o "figma". Foi iniciado dia 01/04/2024;
+- Prototipação: é o processo de criação de um protótipo, ou seja, um modelo intermediário de um produto ou sistema que será submetido a testes. Tem o intuito de se verificar aspectos que precisam ser refinados para se chegar ao produto final, antecipando problemas e prevenindo gastos desnecessários. A tecnologia utilizada nessa etapa foi o "figma". Foi iniciado dia 01/04/2024 e finalizado dia 26/05/2024;
 
-- Desenvolvimento: fase em que as ideias e conceitos definidos nos passos anteriores são colocados em prática e se tornam funcionais. A tecnologia utilizada para a realização dessa etapa foram "HTML, CSS e Javascript". Foi iniciado dia 20/03/2024;
+- Desenvolvimento: fase em que as ideias e conceitos definidos nos passos anteriores são colocados em prática e se tornam funcionais. A tecnologia utilizada para a realização dessa etapa foram "HTML, CSS e Javascript". Foi iniciado dia 20/03/2024 e finalizado dia 09/06/2024;
 
-- Relacionamento e Documentação: etapa responsável por se comunicar com o cliente, alinhando o projeto às suas expectativas, e por registrar as etapas do projeto.
+- Relacionamento e Documentação: etapa responsável por se comunicar com o cliente, alinhando o projeto às suas expectativas, e por registrar as etapas do projeto. Foi iniciado dia 01/04/2024 e finalizado dia 09/06/2024.
 
 
 ## Tecnologias utilizadas
