@@ -159,11 +159,6 @@ handlebars.registerHelper('carrinho', function(index, options) {
             res.render('cadastro', { title: 'Cadastro - Pesadão' });
         });
 
-        //Rota Cadastro Produto
-        app.get('/cadastroProduto', function(req,res){
-            res.render('cadastroProduto', {title: 'Cadastrar Produtos'});
-        });
-
         //Rota para finalizar compra
         app.get('/final', function(req,res){
             res.render('final', {title: 'Compra Feita'})
@@ -319,40 +314,6 @@ app.get('/carrinho', function(req, res){
                 });
             }else{
                 res.status(400).send("As senhas não coincidem!");
-            }
-        });
-
-        //Rota para Cadastrar Produto
-        app.post('/cadastroProduto', function(req, res) {
-            // Verificar se req.files e req.files.imagemProduto são definidos
-            if (req.files && req.files.imagemProduto) {
-                let nome = req.body.nomeProduto;
-                let genero = req.body.generoProduto;
-                let preco = req.body.precoProduto;
-                let imagem = req.files.imagemProduto.name;
-        
-                // SQL
-                let sql = `INSERT INTO produtos (name, generoProd, preco, imagem) VALUES ('${nome}', '${genero}', '${preco}', '${imagem}')`;
-                // EXECUÇÃO SQL
-                conexao.query(sql, function(erro, retorno) {
-                    if (erro) {
-                        console.error(erro);
-                        res.status(500).send('Erro ao cadastrar produto');
-                    } else {
-                        // Salvar a imagem
-                        req.files.imagemProduto.mv(__dirname + '/imagens/' + req.files.imagemProduto.name, function(err) {
-                            if (err) {
-                                console.error(err);
-                                res.status(500).send('Erro ao salvar imagem');
-                            } else {
-                                console.log(retorno);
-                                res.redirect('/cadastroProduto');
-                            }
-                        });
-                    }
-                });
-            } else {
-                res.status(400).send('Nenhuma imagem fornecida');
             }
         });
         app.post('/add-to-cart', function(req, res){

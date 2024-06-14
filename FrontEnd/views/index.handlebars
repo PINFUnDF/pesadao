@@ -21,7 +21,7 @@
             <div class="navbar navbar-expand-lg primeira-navbar shadow-sm p-2 mb-0  row align-items-center d-flex">
                 <div class="container-fluid">
                     <div class="col-md-3">
-                        <a href="/cadastroProduto">
+                        <a href="/">
                             <svg class = "lobinho" width="180" height="50" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="41" height="30" fill="url(#pattern0_2044_637)"/>
                                 <defs>
@@ -94,7 +94,7 @@
             <div class="col-lg-4">
                 <div class="oferta-1">
                     <h2 class = "tit-oferta">Coleção Miau</h2>
-                    <a href="/carrinho"><input type="button" value="Comprar Agora!" class="comprar"></a>
+                    <a href="#novidades"><input type="button" value="Comprar Agora!" class="comprar"></a>
                 </div>
             </div>
             <div class="col-lg-4" id = "content-main">
@@ -126,11 +126,11 @@
 
     <div class="container-md">
         <!-- Carousel da Sessão Femininas -->
-        <div class="titulo">
-            <h2><a id="feminino">Feminino</a></h2>
+        <div class="titulo" id="feminino">
+            <h2><a>Feminino</a></h2>
         </div>
         <!-- Inicio do Carousel -->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-interval="false">
             <div class="carousel-inner">
                 {{#each groupedResultadosFemininos}}
                 <div class="carousel-item {{#if @first}}active{{/if}}">
@@ -270,7 +270,7 @@
             <h2><a id="mochilas">Mochilas</a></h2>
         </div>
         <!-- Inicio do Carousel -->
-        <div id="carouselMochila" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselMochila" class="carousel slide" data-bs-ride="carousel" data-interval = "">
             <div class="carousel-inner">
                 {{#each groupedResultadosMochilas}}
                 <div class="carousel-item {{#if @first}}active{{/if}}">
@@ -298,14 +298,6 @@
                 </div>
                 {{/each}}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMochila" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselMochila" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
         </div>
     </div>
 
@@ -345,14 +337,6 @@
                 </div>
                 {{/each}}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselNovidades" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselNovidades" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Próximo</span>
-            </button>
         </div>
     </div>
 
@@ -460,7 +444,7 @@
                     <p>(61)4002-8922</p>
                     <p>pesadaum@undf.edu.br</p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 links-rodape">
                     <p>VOCÊ PODE ESTAR PROCURANDO POR: </p>
                     <ul>
                         <li><a href="https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm">Código de Defesa do Consumidor</a></li>

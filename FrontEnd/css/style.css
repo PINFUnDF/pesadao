@@ -116,9 +116,10 @@ a{
     height: 30px;
     border: none;
     background-color: #FFFF;
+    transition: 500ms;
 }
 .comprar:hover{
-    border:solid #ffff;
+    transform: scale(1.1);
     background-color: #d9d9d9;
 }
 #select{
@@ -407,6 +408,16 @@ a{
 }
 .box-login a{
     font-family: "Abhaya Libre", serif;;
+}
+.links-rodape ul li{
+    list-style: none;
+}
+.links-rodape ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.links-rodape ul li a:hover{
+    color: #514B4B;
 }
 .box-login form{
     display: flex;
@@ -847,11 +858,37 @@ a{
     margin-right: 150px;
     margin-bottom: 20px;
 }
+.continuar-comprando input{
+    transition: 500ms;
+}
+.continuar-comprando input:hover{
+    transform: scale(1.1);
+    background-color: #000000;
+}
+.finalizar-compra input{
+    transition: 500ms;
+}
+.finalizar-compra input:hover{
+    transform: scale(1.1);
+    background-color: #aaaa;
+}
 .parte-esquerda{
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
     margin-left: 30px;
+}
+.parte-esquerda input{
+    transition: 500ms;
+}
+.parte-esquerda input:hover{
+    background-color: #000;
+    transform: scale(1.1);
+    color: white;
+}
+.container-log{
+    display: flex;
+    justify-content: space-between;
 }
 .tabela{
     display: flex;
